@@ -52,3 +52,32 @@ console.log(typeof myFunciton);
 //        Arrays  =>  object
 //        Function  =>  function
 //        Object  =>  object
+
+
+// *********************************** Lecture no. 10 ************************************
+
+// stack (Primitive)(copy milegi ) , Heap (Non-Primitive)(refrence milega )
+
+let myYoutubeName = "shivamjhadotcom"
+
+let anotherName = myYoutubeName
+anotherName = "abhinavjhadotcom"
+
+console.log(myYoutubeName);
+console.log(anotherName);
+
+// non - primitive
+
+let UserOne = {
+    email : "jaago@google.com",
+    upi : "8287050521@ybl"
+}
+
+let UserTwo = UserOne
+
+UserTwo.email = "coding@gmail.com"
+
+console.log(UserOne);
+
+console.log(UserTwo);
+
