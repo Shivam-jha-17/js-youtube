@@ -1,3 +1,4 @@
+// kis trah se data ko memory mein rakha jata hai aur access kiya jata hai uss basis pe doo type ke data type hai 
 // primitive (call by value :- Value ki copy pass hoti hai, original change nahi hota.)
 
 // 7 types : String, Number, Boolean, null, undefined, Symbol, BigInt
