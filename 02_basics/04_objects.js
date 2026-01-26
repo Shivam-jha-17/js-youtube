@@ -68,6 +68,46 @@ console.log(Object.entries(tinderUser));
 // kai baar objects mein  se jab hum value nikal rahe hote hai toh kuch values hai joo exist hi nahi karti,  jisse crash hone ke chances hote hai. toh hum ye hasOwnProperty method use karte hai.
 console.log(tinderUser.hasOwnProperty('isLoggedIn')); // iss method ko hum use karte hai existing aur non-existing property ko check karne mein.
 
+// ab hum karenge object ki destructuring.
+
+const course = {
+    coursename: "js in hindi",
+    price: 999,
+    courseInstructor: "shivam jha"
+}
+
+// course.courseInstructor
+
+const {courseInstructor: instructor} = course
+
+// console.log(courseInstructor);
+
+console.log(instructor);
+
+// Destructuring is ended here.
+
+// ab hum padhenge API ke baare mein. API matlab jab hum apna kaam kisi aur ke sar par taal dete hai :).
+// api is like resturant menu card hum server se api lete hai aur woo humari request ko puri karta hai.
+
+// pehle api joo aati thi woo xml format mein aati thi. lekin abhi ki api json format mein aati hai. json matlab javascript object notation.
+// API = JSON format. json is not limited only with javascript. its widely used in API industry. whether it is ruby on rails, php, data json format mein hi jayega
+
+// json ka example:
+
+// {
+//     // ye json format hai. jisme key and value dono string hote hai "".
+//     "name": "shivam",
+//     "coursename": "js in hindi",
+//     "price": "free"
+// }
+
+// kai baar API joo hai woo hume array ki format mein bhi mil sakte hai.
+
+[
+    {},
+    {},
+    {}
+]
 
 // ✅ Object constructor
 // ✅ Object literal
