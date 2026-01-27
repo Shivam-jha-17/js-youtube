@@ -35,7 +35,7 @@ Jsuser.email = "shivam@microsoft.com"
 
 Jsuser.greetings = function(){
     console.log("hello Js user");
-    
+    // agar aap console.log("hello Js user"); ki jagah return "hello Js user"; karte hain toh jab aap is function ko call karenge tab yeh value return karega bina error ke iss comannad ke saath console.log(Jsuser.greetingsTwo());
 }
 
 Jsuser.greetingsTwo = function(){
