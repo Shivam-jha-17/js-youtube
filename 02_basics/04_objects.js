@@ -55,7 +55,7 @@ const user = [
     },
 ]
 
-users[1].email // isse hum particular user ka email nikal sakte hain.
+// users[1].email // isse hum particular user ka email nikal sakte hain.
 
 console.log(tinderUser);
 
@@ -76,13 +76,18 @@ const course = {
     courseInstructor: "shivam jha"
 }
 
-// course.courseInstructor
+// const courseInst = course.courseInstructor // normal way of extracting property from object
 
-const {courseInstructor: instructor} = course
+// console.log(courseInst);
 
-// console.log(courseInstructor);
+// In destructuring this is the new way of extracting property from object.
 
-console.log(instructor);
+const {price, courseInstructor} = course
+// const {courseInstructor: instructor} = course // renaming while destructuring
+
+console.log(courseInstructor, price);
+
+// console.log(instructor);
 
 // Destructuring is ended here.
 
