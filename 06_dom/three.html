@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai Aur Code</title>
+</head>
+<body style="background-color: #212121 ">
+    
+</body>
+<script>
+   const div = document.createElement('div')
+   console.log(div);
+   div.className = "main"
+   div.id = Math.round(Math.random() * 10 + 1)// ye toh hue by default joo attributes milte hai unko set karna 
+
+   // hum kuch custom attributes bhi set kar sakte hai.
+   div.setAttribute("title", "generated title")
+   div.style.backgroundColor = "green"
+   div.style.padding = "12px"
+    // yaha tak humne joo bhi value di woo memory ke andar hai but page par nahi aaya toh woo kaise aayega ?
+    // jab document ko bolenge ki iss child ko attach toh karo apne pass
+
+    // div.innerText = "chai aur code" // ye achi practice nahi hai aisa devlopers ka kehna hai kyunki ye value over write karta hai.
+    // but joo setAttribute hai woo value leke nahi aata woo direct value set karta hai. jisse ek round trip bachta hai.
+
+    const addText = document.createTextNode("chai aur code")
+    div.appendChild(addText) // iske baare mein charcha fir kabhi karenge ki konsa sahi hai ?
+
+    document.body.appendChild(div)
+    // isse aage hum ye kar sakte hai ki isse pure ek function mein daal ke loop laga ke colours deke ye kahe ki ye ye elements hai aisa aisa karo.
+</script>
+</html>
